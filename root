@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Defines character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on mobile devices -->
+  <title>SuperSight | Coming Soon</title> <!-- Title shown on browser tab -->
+  <style>
+    /* Base styles for the entire page */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000; /* Solid black background */
+      color: #fff; /* White text */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean sans-serif font */
+      display: flex; /* Enables flex layout */
+      align-items: center; /* Vertically centers content */
+      justify-content: center; /* Horizontally centers content */
+      flex-direction: column; /* Stacks children vertically */
+      height: 100vh; /* Full viewport height */
+      text-align: center; /* Center-aligns text */
+      background-image: radial-gradient(circle at center, #1a1a1a, #000); /* Subtle gradient effect */
+    }
+
+    /* Heading styles */
+    h1 {
+      font-size: 3rem; /* Large font */
+      background: linear-gradient(90deg, #ff004c, #0077ff); /* Gradient color text */
+      -webkit-background-clip: text; /* Applies gradient to text only */
+      -webkit-text-fill-color: transparent; /* Makes the text itself transparent to show gradient */
+      margin-bottom: 0.5rem; /* Space below heading */
+    }
+
+    /* Paragraph styles */
+    p {
+      font-size: 1.2rem; /* Slightly larger paragraph text */
+      max-width: 600px; /* Limits width for readability */
+      margin: 0 1rem 2rem; /* Margin around paragraph */
+    }
+
+    /* Eye image container */
+    .eye {
+      width: 120px;
+      height: 120px;
+      background-image: url('eye.png'); /* Background image of the eye */
+      background-size: cover; /* Ensures image covers the entire div */
+      background-position: center; /* Centers image */
+      border-radius: 50%; /* Makes the image a circle */
+      margin-bottom: 1.5rem; /* Space below the image */
+      box-shadow: 0 0 20px #ff004c; /* Glowing red shadow effect */
+      cursor: pointer; /* Shows clickable cursor */
+      transition: transform 0.3s ease; /* Smooth hover animation */
+    }
+
+    /* Hover effect for eye */
+    .eye:hover {
+      transform: scale(1.1) rotate(5deg); /* Enlarges and rotates the image on hover */
+    }
+
+    /* Button styles */
+    .notify {
+      background: #111; /* Dark background */
+      padding: 0.75rem 1.5rem; /* Padding for button size */
+      border: 1px solid #333; /* Border styling */
+      border-radius: 10px; /* Rounded corners */
+      color: #ccc; /* Light gray text */
+      font-size: 0.95rem; /* Slightly smaller font */
+      cursor: pointer; /* Pointer on hover */
+      transition: all 0.3s ease; /* Smooth transition */
+    }
+
+    /* Hover effect for button */
+    .notify:hover {
+      background: #222; /* Slightly lighter background on hover */
+      border-color: #555; /* Lighter border color on hover */
+    }
+  </style>
+</head>
+<body>
+  <!-- Interactive eye image that triggers a pop-up on click -->
+  <div class="eye" onclick="alert('👁️ The Eye Sees All. Stay tuned!')"></div>
+
+  <!-- Main title -->
+  <h1>SuperSight</h1>
+
+  <!-- Description paragraph -->
+  <p>The memetic eye of creative power is awakening. Built on Superchain. Forged by visionaries. Launching soon.</p>
+
+  <!-- Notification button (future functionality can be added here) -->
+  <button class="notify">Get Notified</button>
+</body>
+</html>
